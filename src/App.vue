@@ -1,17 +1,21 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <button v-if="this.ready" @click="handleClick">Get New Cocktail</button>
+    SZIA LAJOS
+    <router-view></router-view>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+/* @todo make landing page */
+/* @todo create new components & pages */
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    /* RandomDrink, */
+    /* Test, */
+  },
+};
 </script>
 
 <style>

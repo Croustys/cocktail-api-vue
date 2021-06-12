@@ -1,4 +1,4 @@
-# imdb-api
+# Cocktail API Vue project
 
 ## Project setup
 ```
