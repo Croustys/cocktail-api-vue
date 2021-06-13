@@ -1,6 +1,9 @@
 <template>
-  <div v-if="this.ready">
-    <div class="type">{{ type }}</div>
+  <div>
+    <router-link to="/random-drink">Check out a random Cocktail!</router-link>
+    <router-link to="/alldrinks/:alcoholic"
+      >List all alcoholic Cocktails!</router-link
+    >
   </div>
 </template>
 

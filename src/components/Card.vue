@@ -12,6 +12,8 @@
       <img :src="imageLink" alt="" />
       <div class="info">
         <h2>Ingredients</h2>
+        <h1 class="drinkId">{{ drinkId }}</h1>
+
         <ul v-for="(each, i) in ingredients" :key="i">
           <li :key="i">
             <strong>{{ each.ing }}</strong> - {{ each.mes }}
@@ -63,6 +65,10 @@ export default {
       type: String,
       default: "",
     },
+    drinkId: {
+      type: String,
+      default: null,
+    },
   },
 };
 </script>
@@ -78,14 +84,15 @@ body {
 }
 
 .container {
+  flex: 1;
   box-shadow: 0 15px 30px 1px grey;
   background: rgba(255, 255, 255, 0.9);
   text-align: center;
   border-radius: 5px;
   overflow: hidden;
-  margin: 5em auto;
-  height: 350px;
-  width: 700px;
+  margin: 2em 0.8em;
+  height: 300px;
+  width: 600px;
 }
 
 .product-details {
@@ -255,6 +262,10 @@ body {
 }
 .product-image img {
   animation: 0.3s outAnim ease-out;
+}
+.drinkId {
+  text-align: center;
+  font-size: 3.5em;
 }
 @keyframes inAnim {
   from {

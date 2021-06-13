@@ -1,7 +1,5 @@
 <template>
   <div>
-    <button v-if="this.ready" @click="handleClick">Get New Cocktail</button>
-    SZIA LAJOS
     <router-view></router-view>
   </div>
 </template>
