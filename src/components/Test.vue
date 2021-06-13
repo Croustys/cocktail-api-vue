@@ -1,9 +1,10 @@
 <template>
   <div>
     <router-link to="/random-drink">Check out a random Cocktail!</router-link>
-    <router-link to="/alldrinks/:alcoholic"
-      >List all alcoholic Cocktails!</router-link
-    >
+    <br />
+    <router-link to="/alldrinks/alcoholic">List all alcoholic Cocktails!</router-link>
+    <br />
+    <router-link to="/alldrinks/non-alcoholic">List all Non-alcoholic Cocktails!</router-link>
   </div>
 </template>
 
