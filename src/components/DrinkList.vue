@@ -1,5 +1,5 @@
 <template>
-  <h1>{{alc? "Alcoholic" : "Non - Alcoholic"}} Cocktails</h1>
+  <h1>{{ alc ? "Alcoholic" : "Non - Alcoholic" }} Cocktails</h1>
   <div class="flex-grid">
     <drinks />
   </div>
@@ -23,7 +23,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .flex-grid {
   display: flex;
   flex-wrap: wrap;
